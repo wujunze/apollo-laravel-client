@@ -1,0 +1,44 @@
+{
+    "name": "wujunze/apollo-laravel-client",
+    "description": "Laravel apollo configuration-management   client",
+    "type": "library",
+    "keywords": [
+        "Laravel",
+        "configuration-management",
+        "apollo"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "wujunze",
+            "email": "itwujunze@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "laravel/framework": "5.*",
+        "nicmart/string-template": "^0.1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "WuJunze\\LaravelApollo\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WuJunze\\LaravelApollo\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.2",
+        "phpunit/phpunit": "^7.4",
+        "codedungeon/phpunit-result-printer": "^0.23.3"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "WuJunze\\LaravelApollo\\Providers\\ServiceProvider"
+            ]
+        }
+    }
+}
