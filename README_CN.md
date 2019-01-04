@@ -1,8 +1,5 @@
 # apollo-laravel-client
-Apollo  configuration  management Laravel client
-
-
-[中文说明](https://github.com/wujunze/apollo-laravel-client/blob/master/README_CN.md)
+Apollo 配置中心 Laravel 客户端
 
 
 [![Build Status](https://travis-ci.org/wujunze/apollo-laravel-client.svg?branch=master)](https://travis-ci.org/wujunze/apollo-laravel-client)
@@ -13,10 +10,10 @@ Apollo  configuration  management Laravel client
 
 # Features
 
-- Laravel Apollo client is implemented based on the HTTP API provided by Apollo
-- Laravel's env config mechanism is non-intrusive and can seamlessly access Apollo 
-- Update configuration files automatically through Command
-- [Apollo configuration center introduction to the introduction](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BB%8B%E7%BB%8D)
+- 基于 [Apollo](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BB%8B%E7%BB%8D) 提供的 HTTP API 实现 Laravel Apollo 客户端
+- 对 Laravel 的 env config 机制无侵入  
+- 通过 Command 来自动更新配置文件 
+- [Apollo配置中心介绍](https://github.com/ctripcorp/apollo/wiki/Apollo%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%BF%83%E4%BB%8B%E7%BB%8D) 的介绍
 
 # Install
 
@@ -61,7 +58,7 @@ APP_KEY = {APP_KEY}",
     //Apollo app_id
     'app_id' => env('APOLLO_SERVER_APP_ID', 'contract'),
     'namespaces' => env('APOLLO_SERVER_APP_ID', ['application']),
-    // Grayscale published client IP
+    //灰度发布的客户端ip
     'client_ip' => env('APOLLO_CLIENT_IP'),
     'restart' => env('APOLLO_RESTART', false),
 
