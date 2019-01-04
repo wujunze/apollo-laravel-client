@@ -24,6 +24,7 @@ Apollo  configuration  management Laravel client
  composer require wujunze/apollo-laravel-client 
 ```
     
+### in your console to publish default configuration files.    
     
 If you use Laravel < 5.5 run:
     
@@ -31,7 +32,6 @@ If you use Laravel < 5.5 run:
 php artisan vendor:publish --provider="WuJunze\LaravelApollo\Providers\ServiceProvider"
 ```
     
-in your console to publish default configuration files.
     
 #### If you are using Laravel 5.5 run:
     
@@ -43,7 +43,7 @@ and choose the number matching `"WuJunze\LaravelApollo\Providers\ServiceProvider
 This operation will create config file in `config/apollo.php`.
 
 
-## Configuration
+# Configuration
 
 you can change the locale at config/apollo.php
 
@@ -71,12 +71,15 @@ APP_KEY = {APP_KEY}",
 ];
 ```
 
-## Usage
+# Usage
 
 run the command
 ```bash
  php artisan apollo:update
 ```
+# Inspiration and Thanks
+[Apollo](https://github.com/ctripcorp/apollo/wiki/%E5%85%B6%E5%AE%83%E8%AF%AD%E8%A8%80%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97)   
+[apollo-php-client](https://github.com/multilinguals/apollo-php-client)
 
-## License
+# License
 MIT
